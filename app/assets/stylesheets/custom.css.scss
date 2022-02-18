@@ -1,41 +1,40 @@
 @import 'bootstrap/dist/css/bootstrap';
 
-.navbar {
-    background-color: #black !important;
- }
- .navbar-brand {
+    .navbar{
+    background-color: black !important;
+         }
+    .navbar-brand{
     font-size: 3rem;
- }
-  h1 {
-    color: green;
- }
- .nav-link {
-     color: #white !important;
- }
- #logo {
+         }
+    h1 {
+    color:green;
+       }
+    .nav-link {
+     color: white !important;
+       }
+    #logo {
      float: left;
      font-size: 1.8em;
-     color: #white;
+     color: white;
      text-transform: uppercase;
      letter-spacing: -1px;
      font-weight: bold;
-    }
+         }
      #home-container{
       margin-top: 25px;
-    }
+         }
       html,
       body {
          height: 100%;
-    }
-
-     #page-content {
+           }
+      #page-content {
         flex: 1 0 auto;
-        backgroud-color: #whitegrey;
-    }
+        background-color: lightgrey;
+          }
 
 /* Other Classes for Page Styling */
 
     
-     #sticky footer {
+      #sticky footer {
          flex-shrink: none;
-     }
+          }
