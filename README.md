@@ -25,4 +25,9 @@ starting online ruby learning ROR with AWS
         <% end %>
     </tbody>
 </table>
-<p>
+<p><h1>showing Article details</h1>
+<P><strong>title: </strong><%= @article.title%></P>
+<p><strong>Description: </strong><%= @article.Description%></p>
+<%= link_to 'edit', edit_article_path(@article) %> |
+<%= link_to 'delete', article_path(@article), method: :delete, data: { confirm: 'are you sure?'} %> |
+<%= link_to 'return to articles listing', articles_path %>
