@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
     before_action :set_user, only: [:edit, :show, :update]
+    before_action :require_user, except: [:index, :show]
+    before_action :login_required, only: [:edit, :update]
+
     def new
         @user = User.new
     end
@@ -36,4 +39,11 @@ class UsersController < ApplicationController
         def set_user
             @user = User.find(params[:id])
         end
+        def login_required
+            if current_user != @user
+                flash[:alert] = "you can only edit you update your profile"
+                redirect_to @user
+            end 
+        end
+
 end
