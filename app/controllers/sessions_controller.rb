@@ -7,6 +7,9 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       flash[:notice] = "Logged in successfully"
       redirect_to user
+    else
+    	flash[:alert] = "there is something wrong with your login details"
+    	render 'new' 
 	end
 	end
 	def destroy
