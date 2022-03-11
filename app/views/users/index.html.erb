@@ -1,4 +1,4 @@
-<h1 class="text-center mt-4">AlphaBloggers</h1>
+<h1 class="text-center mt-4">Bloggers</h1>
 
 <div class="flickr_pagination">
   <%= will_paginate @users, :container => false %>
@@ -28,7 +28,6 @@
               <% end %>
           </div>
           <div class="card-footer text-muted">
-            <small>Joined <%= time_ago_in_words(user.created_at) %> ago</small>
           </div>
         </div>
       </div>
