@@ -16,6 +16,7 @@
                      <a class="btn btn-danger"><%=link_to"Delete",article_path(article),class:"btn btn-danger",method: :delete, data: {confirm: "Are you sure?"}%></a>
                      <% end %>
                    </div>
+                 
                       <div class="card-footer text-muted">
                         <small>created <%= time_ago_in_words(article.created_at) %> ago;
                         edited <%= time_ago_in_words(article.updated_at) %> ago
