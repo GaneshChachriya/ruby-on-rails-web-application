@@ -21,7 +21,8 @@
             edited <%= time_ago_in_words(@article.updated_at) %> ago</small>
           </div>
         </div>
-         <div class="card my-1">
+         <% if logged_in? %>
+          <div class="card my-1">
                  <div class="card-body">
                  <p class="font-weight-bold">Comments</p>
                  <%= form_with(model: [@article, @article.comments.build]) do |f| %>
@@ -34,6 +35,7 @@
                </div>
               </div>
               <%= render @article.comments %>
+              <%end%>
       </div>
     </div>
    

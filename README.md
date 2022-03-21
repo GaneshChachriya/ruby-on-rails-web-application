@@ -1,1 +1,1 @@
-my first ror project Alpha blog
+my first  blogging project

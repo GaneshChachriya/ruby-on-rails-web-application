@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+   before_action :require_user
    def new
       @article = Article.find(params[:article_id])
     @comment = @article.comments.new(parent_id: params[:parent_id])
